@@ -18,7 +18,7 @@ const darkBackground = document.getElementById('dark_background');
 const addTaskForm = document.getElementById('add_task_form');
 const TaskList = document.getElementById('List_items');
 const ProjectList = document.getElementById('Project_list');
-const ProjectName = document.getElementById("project_name");
+const ProjectName = document.getElementById("project_name")
 const projectToday = document.getElementById("today");
 
 // Creating an instance of WorkSpace class
