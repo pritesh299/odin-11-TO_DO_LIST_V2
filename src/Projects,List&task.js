@@ -6,10 +6,11 @@ class Project {
      * Create a To-Do List.
      * @param {string} Pname - The name of the list.
      */
-    constructor(Pname,id) {
+    constructor(id,Pname) {
       this.Pname = Pname; // Name of the list
       this.id=id;
       this.list = []; // Array to store tasks
+      this.LastCreatedTaskID=0;
     }
    
     /**
@@ -23,6 +24,7 @@ class Project {
     addTask(id, name, description, date, priority) {
       let newTask = new Task(id, name, description, date, priority);
       this.list.push(newTask);
+      this.LastCreatedTaskID=this.LastCreatedTaskID+1;
     }
    
     /**
